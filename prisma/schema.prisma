@@ -16,8 +16,10 @@ model Show {
   status    String?
   rating    Float?
   genres    Genre[] @relation("ShowGenres")
-  watchlists Watchlist[] // ✅ Bætti við til að laga Watchlist tengingu
-  reviews   Review[] // ✅ Bætti við til að laga Review tengingu
+  watchlists Watchlist[]
+  reviews   Review[] 
+  imageUrl String? 
+
 }
 
 model Genre {
@@ -28,6 +30,7 @@ model Genre {
 
 model User {
   id       Int    @id @default(autoincrement())
+  username String @unique
   email    String @unique
   password String
   role     String @default("user") // user eða admin
