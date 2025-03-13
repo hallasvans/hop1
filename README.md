@@ -8,8 +8,8 @@
 
 1. Klóna repo-ið:
    ```bash
-   git clone https://github.com/THINN-GITHUB-USER/VEF2-2025-HOP1.git
-   cd VEF2-2025-HOP1
+   git clone https://github.com/hallasvans/hop1.git
+   cd vef2-2025-hop1
 2. Setja upp dependencies:
     npm install
 3. Setja upp .env skrá með þessum upplýsingum:
