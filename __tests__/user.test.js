@@ -7,14 +7,14 @@ import bcrypt from "bcryptjs";
 const prisma = new PrismaClient();
 
 beforeEach(async () => {
-  await prisma.review.deleteMany();  // Eyða öllum reviews
-  await prisma.watchlist.deleteMany();  // Eyða öllum watchlist færslum
-  await prisma.user.deleteMany();  // Þá er hægt að eyða notendum
+  await prisma.review.deleteMany(); 
+  await prisma.watchlist.deleteMany();
+  await prisma.user.deleteMany();
   await prisma.user.create({
     data: {
       username: "testuser",
       email: "test@example.com",
-      password: await bcrypt.hash("mypassword", 10), // Tryggja hashed password
+      password: await bcrypt.hash("mypassword", 10), 
     },
   });
 });
