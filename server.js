@@ -10,10 +10,6 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-console.log("Cloudinary Config:");
-console.log("Cloud Name:", process.env.CLOUDINARY_CLOUD_NAME);
-console.log("API Key:", process.env.CLOUDINARY_API_KEY);
-console.log("API Secret:", process.env.CLOUDINARY_API_SECRET);
 
 
 // API Routes
@@ -36,5 +32,5 @@ app.get("/", (req, res) => {
 // Start Server
 const PORT = 5001;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });

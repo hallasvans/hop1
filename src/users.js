@@ -2,13 +2,13 @@ import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { PrismaClient } from "@prisma/client";
-import verifyToken from "../psw/auth.js"; // Notum auth middleware
+import verifyToken from "../psw/auth.js";
 
 const router = express.Router();
 const prisma = new PrismaClient();
-const SECRET = "leyndarmalstoken"; // Betra að geyma í .env
+const SECRET = "leyndarmalstoken";
 
-// 📌 Notendaskráning
+// Notendaskráning
 router.post("/register", async (req, res) => {
   const { email, password } = req.body;
 
@@ -29,7 +29,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-// 📌 Notendainnskráning
+// Notendainnskráning
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -52,14 +52,14 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// 📌 Notandaprófíl (krefst auðkenningar)
+// Notandaprófíl (krefst auðkenningar)
 router.get("/profile", verifyToken, async (req, res) => {
-    console.log("🟢 Token decode result:", req.user); // 🔍 Debug
+    console.log("Token decode result:", req.user); // 🔍 Debug
   
     try {
       const user = await prisma.user.findUnique({
         where: { id: req.user.id },
-        select: { id: true, email: true, role: true } // ATH: username er ekki í `schema.prisma`
+        select: { id: true, email: true, role: true } 
       });
   
       if (!user) {
@@ -68,7 +68,7 @@ router.get("/profile", verifyToken, async (req, res) => {
   
       res.json(user);
     } catch (error) {
-      console.error("🔴 Villa í /users/profile:", error);
+      console.error("Villa í /users/profile:", error);
       res.status(500).json({ error: "Villa við að sækja notanda" });
     }
   });
