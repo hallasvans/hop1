@@ -45,5 +45,4 @@ Render - Hýsing
 Halla Þórdís Svansdóttir
 
 ## Hýsing á Render
-
-Forritið er hýst á Render:
+https://hop1.onrender.com
