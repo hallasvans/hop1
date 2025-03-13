@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Show {
+  id        Int     @id @default(autoincrement())
+  title     String  @unique
+  platform  String?
+  seasons   Int?
+  episodes  Int?
+  status    String?
+  rating    Float?
+  genres    Genre[] @relation("ShowGenres")
+  watchlists Watchlist[] // ✅ Bætti við til að laga Watchlist tengingu
+  reviews   Review[] // ✅ Bætti við til að laga Review tengingu
+}
+
+model Genre {
+  id    Int    @id @default(autoincrement())
+  name  String @unique
+  shows Show[] @relation("ShowGenres")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+  role     String @default("user") // user eða admin
+  watchlist Watchlist[]
+  reviews  Review[]
+}
+
+model Watchlist {
+  id      Int   @id @default(autoincrement())
+  userId  Int
+  showId  Int
+  user    User  @relation(fields: [userId], references: [id])
+  show    Show  @relation(fields: [showId], references: [id])
+}
+
+model Review {
+  id      Int    @id @default(autoincrement())
+  rating  Int   
+  comment String?
+  userId  Int
+  showId  Int
+  user    User   @relation(fields: [userId], references: [id])
+  show    Show   @relation(fields: [showId], references: [id])
+}
