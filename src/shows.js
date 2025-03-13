@@ -1,12 +1,10 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
-import fileUpload from "express-fileupload";
-
 
 const router = express.Router();
 const prisma = new PrismaClient();
 
-// 📌 Ná í alla þætti (með möguleika á genre filter)
+//  Ná í alla þætti saman
 router.get("/", async (req, res) => {
   const { category } = req.query;
 
@@ -24,7 +22,7 @@ router.get("/", async (req, res) => {
     res.status(500).json({ error: "Villa við að sækja þætti" });
   }
 });
-// 🔹 Bæta við nýjum þætti
+// Bæta við nýjum þætti
 router.post("/", async (req, res) => {
     const { title, platform, seasons, episodes, status, rating } = req.body;
   
@@ -39,7 +37,7 @@ router.post("/", async (req, res) => {
     }
   });
 
-// 📌 Ná í stakan þátt
+// Ná í stakan þátt
 router.get("/:id", async (req, res) => {
   const { id } = req.params;
   try {
@@ -52,7 +50,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// 🔹 Uppfæra þátt eftir ID
+// Uppfæra þátt með ID
 router.put("/:id", async (req, res) => {
     const { id } = req.params;
     const { title, platform, seasons, episodes, status, rating } = req.body;
@@ -70,7 +68,7 @@ router.put("/:id", async (req, res) => {
     }
   });
 
-  // 🔹 Eyða þætti eftir ID
+  // Eyða þætti með ID
 router.delete("/:id", async (req, res) => {
     const { id } = req.params;
   

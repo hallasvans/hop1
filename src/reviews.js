@@ -5,13 +5,13 @@ import verifyToken from "../psw/auth.js";
 const router = express.Router();
 const prisma = new PrismaClient();
 
-// 📌 Ná í allar umsagnir um tiltekinn þátt
+// Ná í allar umsagnir um þátt
 router.get("/:showId", async (req, res) => {
   const { showId } = req.params;
   try {
     const reviews = await prisma.review.findMany({
       where: { showId: Number(showId) },
-      include: { user: { select: { email: true } } } // Sýna netfang notanda sem gaf umsögn
+      include: { user: { select: { email: true } } }
     });
     res.json(reviews);
   } catch (error) {
@@ -19,7 +19,7 @@ router.get("/:showId", async (req, res) => {
   }
 });
 
-// 📌 Bæta við umsögn fyrir þátt
+// Bæta við umsögn fyrir þátt
 router.post("/", verifyToken, async (req, res) => {
   const { showId, rating, comment } = req.body;
   try {
@@ -37,7 +37,7 @@ router.post("/", verifyToken, async (req, res) => {
   }
 });
 
-// 📌 Eyða umsögn (bara eigandi eða admin má eyða)
+// Eyða umsögn (bara eigandi eða admin má eyða)
 router.delete("/:reviewId", verifyToken, async (req, res) => {
   const { reviewId } = req.params;
 

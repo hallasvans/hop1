@@ -1,24 +1,24 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
-import verifyToken from "../psw/auth.js"; // Notum auth fyrir auðkenningu
+import verifyToken from "../psw/auth.js";
 
 const router = express.Router();
 const prisma = new PrismaClient();
 
-// 📌 Sækja Watchlist fyrir innskráðan notanda
+// Sækja Watchlist fyrir innskráðan notanda
 router.get("/", verifyToken, async (req, res) => {
   try {
     const watchlist = await prisma.watchlist.findMany({
       where: { userId: req.user.id },
-      include: { show: true } // Taka með upplýsingar um þáttinn
+      include: { show: true }
     });
     res.json(watchlist);
   } catch (error) {
-    res.status(500).json({ error: "Villa við að sækja áhorfslista" });
+    res.status(500).json({ error: "Villa við að sækja watchlist" });
   }
 });
 
-// 📌 Bæta við þætti í Watchlist
+// Bæta við þætti í Watchlist
 router.post("/", verifyToken, async (req, res) => {
   const { showId } = req.body;
   try {
@@ -34,7 +34,7 @@ router.post("/", verifyToken, async (req, res) => {
   }
 });
 
-// 📌 Eyða þætti úr Watchlist
+// Eyða þætti úr Watchlist
 router.delete("/:showId", verifyToken, async (req, res) => {
   const { showId } = req.params;
   try {

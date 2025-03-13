@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const SECRET = "leyndarmalstoken"; // Þetta á að passa við það sem er í users.js!
+const SECRET = "leyndarmalstoken";
 
 const verifyToken = (req, res, next) => {
   const authHeader = req.headers.authorization;
