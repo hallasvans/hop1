@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "prisma generate && prisma db push && tsx prisma/seed.ts",
     "start": "node server.js",
     "dev": "nodemon server.js",
     "prisma": "prisma",
