@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "prisma generate && prisma db push && tsx prisma/seed.ts",
+    "postinstall": "prisma generate && prisma db push && tsx prisma/seed.js",
     "dev": "nodemon server.js",
     "prisma": "prisma",
     "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests"
