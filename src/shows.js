@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 //  Ná í alla þætti saman
 router.get("/", async (req, res) => {
-  const { category } = req.query;
+  const { genre } = req.query;
 
   try {
     let shows = genre
