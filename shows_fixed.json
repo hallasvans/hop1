@@ -1,0 +1,779 @@
+[
+  {
+    "title":"Game of thrones",
+    "genre":"Fantasy",
+    "platform":"Annað",
+    "seasons":8.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Chernobyl",
+    "genre":"Drama",
+    "platform":"Prime",
+    "seasons":1.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Rick and Morty",
+    "genre":"Cartoon",
+    "platform":"Annað",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Sherlock",
+    "genre":"Crime",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Office",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":9.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Better Call Saul",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Gravity Falls",
+    "genre":"Cartoon",
+    "platform":"Disney+",
+    "seasons":2.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Friends",
+    "genre":"Comedy",
+    "platform":"Stöð2+",
+    "seasons":10.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Succession",
+    "genre":"Drama",
+    "platform":"Stöð2+",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Narcos",
+    "genre":"Thriller",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Ted Lasso",
+    "genre":"Comedy",
+    "platform":"Annað",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Peaky Blinders",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Penguin",
+    "genre":"Drama",
+    "platform":"Sjónvarp símans",
+    "seasons":1.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Last of Us",
+    "genre":"Thriller",
+    "platform":"Prime",
+    "seasons":1.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Boys",
+    "genre":"Drama",
+    "platform":"Prime",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Stranger Things",
+    "genre":"Adventure",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Parks and Rec",
+    "genre":"Comedy",
+    "platform":"Prime",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Crown",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Dexter",
+    "genre":"Crime",
+    "platform":"Netflix",
+    "seasons":8.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Daredevil",
+    "genre":"Drama",
+    "platform":"Disney+",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Mindhunter",
+    "genre":"Crime",
+    "platform":"Netflix",
+    "seasons":2.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Queen's Gambit",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Búin"
+  },
+  {
+    "title":"The IT Crowd",
+    "genre":"Comedy",
+    "platform":"Prime",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Mr. Robot",
+    "genre":"Drama",
+    "platform":"Prime",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Derry Girls",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Heartstopper",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Rookie",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Prison Break",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Nobody Wants This",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Only Murders in the Building",
+    "genre":"Crime",
+    "platform":"Disney+",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Outer Banks",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Criminal Minds",
+    "genre":"Crime",
+    "platform":"Disney+",
+    "seasons":17.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Suits",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":9.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Modern Family",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":11.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Wednesday",
+    "genre":"Adventure",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Bíða eftir þáttum"
+  },
+  {
+    "title":"The Big Bang Theory",
+    "genre":"Comedy",
+    "platform":"Annað",
+    "seasons":12.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Young Sheldon",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Lucifer",
+    "genre":"Crime",
+    "platform":"Netflix",
+    "seasons":6.0,
+    "status":"Búin"
+  },
+  {
+    "title":"HIMYM",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":9.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Lab Rats",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":4.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Abbott Elementary",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Baby Daddy",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Castle",
+    "genre":"Crime",
+    "platform":"Disney+",
+    "seasons":8.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Cougar Town",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Desperate Housewives",
+    "genre":"Soap",
+    "platform":"Disney+",
+    "seasons":8.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Devious Maids",
+    "genre":"Soap",
+    "platform":"Disney+",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Glee",
+    "genre":"Drama",
+    "platform":"Disney+",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Mighty Med",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":2.0,
+    "status":"Búin"
+  },
+  {
+    "title":"New Girl",
+    "genre":"Comedy",
+    "platform":"Disney+",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Orville",
+    "genre":"Fantasy",
+    "platform":"Disney+",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Wizard of Waverly Pl.",
+    "genre":"Adventure",
+    "platform":"Disney+",
+    "seasons":4.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Quantico",
+    "genre":"Crime",
+    "platform":"Disney+",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Scandal",
+    "genre":"Drama",
+    "platform":"Disney+",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Station 19",
+    "genre":"Drama",
+    "platform":"Disney+",
+    "seasons":7.0,
+    "status":"Búin"
+  },
+  {
+    "title":"White Collar",
+    "genre":"Crime",
+    "platform":"Disney+",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Wrexham",
+    "genre":"Documentary",
+    "platform":"Disney+",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"AGGGTM",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Bíða eftir þáttum"
+  },
+  {
+    "title":"Adventure Time",
+    "genre":"Cartoon",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Atypical",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Blockbuster",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Bodyguard",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Bridgerton",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Brooklyn 99",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":8.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Solar Opposites",
+    "genre":"Cartoon",
+    "platform":"Disney+",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"DC's Legends of Tmrw",
+    "genre":"Adventure",
+    "platform":"Netflix",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Dirk Gently's HDA",
+    "genre":"Adventure",
+    "platform":"Netflix",
+    "seasons":2.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Disenchantment",
+    "genre":"Cartoon",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Dynasty",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"First Kill",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Ginny and Georgia",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":2.0,
+    "status":"Bíða eftir þáttum"
+  },
+  {
+    "title":"Good Girls",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Greenhouse Academy",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Kaleidoscope",
+    "genre":"Thriller",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Killing Eve",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Manifest",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Money Heist",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Mulligan",
+    "genre":"Cartoon",
+    "platform":"Netflix",
+    "seasons":2.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"My Hero Academia",
+    "genre":"Anime",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Never Have I Ever",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"New Amsterdam",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"On My Block",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Paradise P.D.",
+    "genre":"Cartoon",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Psych",
+    "genre":"Crime",
+    "platform":"Netflix",
+    "seasons":8.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Riverdale",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Santa Clarita Diet",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Sex Education",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Space Force",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":2.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Teenage bounty Hunters",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Blacklist",
+    "genre":"Crime",
+    "platform":"Netflix",
+    "seasons":9.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Flash",
+    "genre":"Adventure",
+    "platform":"Netflix",
+    "seasons":9.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Gentlemen",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":1.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Good Doctor",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Good Place",
+    "genre":"Comedy",
+    "platform":"Netflix",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Lincoln Lawyer",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Night Agent",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":2.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Vampire Diaries",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":8.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Top Boy",
+    "genre":"Drama",
+    "platform":"Netflix",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Hawaii Five-O",
+    "genre":"Crime",
+    "platform":"Viaplay",
+    "seasons":10.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Pretty Little Liars",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":7.0,
+    "status":"Búin"
+  },
+  {
+    "title":"Chicago P.D.",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Chicago Fire",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Chicago Med",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":4.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Rizzoli & Isles",
+    "genre":"Crime",
+    "platform":"Viaplay",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Elementary",
+    "genre":"Crime",
+    "platform":"Viaplay",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Handmaid's Tale",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Seal Team",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":6.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Good Witch",
+    "genre":"Soap",
+    "platform":"Viaplay",
+    "seasons":7.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The Originals",
+    "genre":"Drama",
+    "platform":"Viaplay",
+    "seasons":5.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"Grey's Anatomy",
+    "genre":"Drama",
+    "platform":"Disney+",
+    "seasons":21.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":"The White Lotus",
+    "genre":"Drama",
+    "platform":"Sjónvarp símans",
+    "seasons":3.0,
+    "status":"Langar að sjá"
+  },
+  {
+    "title":null,
+    "genre":"Unknown",
+    "platform":"Unknown",
+    "seasons":0.0,
+    "status":"Unknown"
+  }
+]

@@ -1,19 +1,18 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
+import fs from "fs";
 
 const prisma = new PrismaClient();
 
 async function main() {
-  // Athuga hvort admin notandi sé nú þegar til
+  // Búa til admin notanda ef hann er ekki þegar til
   const existingAdmin = await prisma.user.findUnique({
     where: { email: "admin@example.com" },
   });
 
   if (!existingAdmin) {
-    // Búa til hash-að lykilorð
     const hashedPassword = await bcrypt.hash("adminpassword", 10);
 
-    // Búa til admin notanda
     await prisma.user.create({
       data: {
         email: "admin@example.com",
@@ -27,6 +26,23 @@ async function main() {
   } else {
     console.log("Admin notandi er þegar til");
   }
+
+  // Bæta við þáttum úr JSON skrá
+  const data = JSON.parse(fs.readFileSync("./prisma/shows.json", "utf-8"));
+
+  for (const show of data) {
+    await prisma.show.create({
+      data: {
+        title: show.title,
+        genre: show.genre,
+        platform: show.platform,
+        seasons: Math.floor(show.seasons),
+        status: show.status,
+      },
+    });
+  }
+
+  console.log(`Bætti við ${data.length} þáttum í gagnagrunninn ✅`);
 }
 
 main()

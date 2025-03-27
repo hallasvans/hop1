@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
   const { category } = req.query;
 
   try {
-    let shows = category
+    let shows = genre
       ? await prisma.show.findMany({ where: { category } })
       : await prisma.show.findMany();
 
