@@ -41,8 +41,10 @@ async function main() {
   console.log(`Bætti við ${uniqueGenres.length} genre(s)`);
 
   for (const show of data) {
-    await prisma.show.create({
-      data: {
+    await prisma.show.upsert({
+      where: { title: show.title },
+      update: {},
+      create: {
         title: show.title,
         platform: show.platform,
         seasons: Math.floor(show.seasons),
