@@ -5,7 +5,6 @@ import fs from "fs";
 const prisma = new PrismaClient();
 
 async function main() {
-  // Búa til admin notanda ef hann er ekki þegar til
   const existingAdmin = await prisma.user.findUnique({
     where: { email: "admin@example.com" },
   });
@@ -22,13 +21,24 @@ async function main() {
       },
     });
 
-    console.log("Admin notandi búinn til: admin@example.com / adminpassword");
+    console.log("Admin notandi búinn til");
   } else {
     console.log("Admin notandi er þegar til");
   }
 
-  // Bæta við þáttum úr JSON skrá
   const data = JSON.parse(fs.readFileSync("./prisma/shows.json", "utf-8"));
+
+  const uniqueGenres = [...new Set(data.map(show => show.genre))];
+
+  for (const genreName of uniqueGenres) {
+    await prisma.genre.upsert({
+      where: { name: genreName },
+      update: {},
+      create: { name: genreName },
+    });
+  }
+
+  console.log(`Bætti við ${uniqueGenres.length} genre(s)`);
 
   for (const show of data) {
     await prisma.show.create({
@@ -39,12 +49,12 @@ async function main() {
         status: show.status,
         genres: {
           connect: [{ name: show.genre }],
-        }
+        },
       },
     });
   }
 
-  console.log(`Bætti við ${data.length} þáttum í gagnagrunninn ✅`);
+  console.log(`Bætti við ${data.length} þáttum 🎉`);
 }
 
 main()
