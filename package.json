@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "prisma generate && prisma db push && tsx prisma/seed.ts",
     "start": "node server.js",
+    "postinstall": "prisma generate && prisma db push && tsx prisma/seed.ts",
     "dev": "nodemon server.js",
     "prisma": "prisma",
     "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests"
