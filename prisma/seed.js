@@ -34,10 +34,12 @@ async function main() {
     await prisma.show.create({
       data: {
         title: show.title,
-        genre: show.genre,
         platform: show.platform,
         seasons: Math.floor(show.seasons),
         status: show.status,
+        genres: {
+          connect: [{ name: show.genre }],
+        }
       },
     });
   }
