@@ -25,6 +25,8 @@ app.get("/", (req, res) => {
     routes: {
       shows: "/shows",
       users: "/users",
+      watchlist: "/watchlist",
+      reviews: "/reviews"
     }
   });
 });
