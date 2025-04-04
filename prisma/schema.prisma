@@ -8,18 +8,17 @@ datasource db {
 }
 
 model Show {
-  id        Int     @id @default(autoincrement())
-  title     String  @unique
-  platform  String?
-  seasons   Int?
-  episodes  Int?
-  status    String?
-  rating    Float?
-  genres    Genre[] @relation("ShowGenres")
+  id         Int         @id @default(autoincrement())
+  title      String      @unique
+  platform   String?
+  seasons    Int?
+  episodes   Int?
+  status     String?
+  rating     Float?
+  imageUrl   String?
+  reviews    Review[]
   watchlists Watchlist[]
-  reviews   Review[] 
-  imageUrl String? 
-
+  genres     Genre[]     @relation("ShowGenres")
 }
 
 model Genre {
@@ -29,29 +28,37 @@ model Genre {
 }
 
 model User {
-  id       Int    @id @default(autoincrement())
-  username String @unique
-  email    String @unique
-  password String
-  role     String @default("user") // user eða admin
+  id        Int         @id @default(autoincrement())
+  email     String      @unique
+  password  String
+  role      String      @default("user")
+  username  String      @unique
+  reviews   Review[]
   watchlist Watchlist[]
-  reviews  Review[]
 }
 
 model Watchlist {
-  id      Int   @id @default(autoincrement())
-  userId  Int
-  showId  Int
-  user    User  @relation(fields: [userId], references: [id])
-  show    Show  @relation(fields: [showId], references: [id])
+  id     Int  @id @default(autoincrement())
+  userId Int
+  showId Int
+  show   Show @relation(fields: [showId], references: [id])
+  user   User @relation(fields: [userId], references: [id])
 }
 
 model Review {
-  id      Int    @id @default(autoincrement())
-  rating  Int   
+  id      Int     @id @default(autoincrement())
+  rating  Int
   comment String?
   userId  Int
   showId  Int
-  user    User   @relation(fields: [userId], references: [id])
-  show    Show   @relation(fields: [showId], references: [id])
+  show    Show    @relation(fields: [showId], references: [id])
+  user    User    @relation(fields: [userId], references: [id])
+}
+
+model myndir {
+  id          Int       @id @default(autoincrement())
+  title       String
+  description String
+  url         String
+  created     DateTime? @default(now()) @db.Timestamp(6)
 }

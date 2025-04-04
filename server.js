@@ -5,6 +5,8 @@ import usersRoutes from "./src/users.js";
 import watchlistRoutes from "./src//watchlist.js";
 import reviewRoutes from "./src//reviews.js";
 import dotenv from "dotenv";
+import myndirRoutes from './src/myndir.js';
+
 
 dotenv.config();
 const app = express();
@@ -17,6 +19,8 @@ app.use("/shows", showsRoutes);
 app.use("/users", usersRoutes);
 app.use("/watchlist", watchlistRoutes);
 app.use("/reviews", reviewRoutes);
+app.use('/api/myndir', myndirRoutes);
+
 
 // Root Route
 app.get("/", (req, res) => {
